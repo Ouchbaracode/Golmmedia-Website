@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 13% 6%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 13% 9%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 74.9%;
+
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 217.2 91.2% 59.8%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-golm-blue/30 selection:text-white;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-golm-black text-foreground antialiased overflow-x-hidden font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    @apply bg-opacity-10 bg-white backdrop-blur-md border border-white/10 shadow-glass;
+  }
+
+  .glassmorphism-dark {
+    @apply bg-opacity-30 bg-black backdrop-blur-md border border-white/5 shadow-glass;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-white to-white/80 text-transparent bg-clip-text;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-golm-blue via-golm-neon-blue to-golm-blue-light text-transparent bg-clip-text;
+  }
+
+  .neon-glow {
+    @apply shadow-neon;
+  }
+
+  .btn-primary {
+    @apply relative overflow-hidden bg-golm-blue hover:bg-golm-blue-dark text-white font-medium px-6 py-3 rounded-md transition-all duration-300 shadow-button;
+  }
+
+  .btn-glow {
+    @apply btn-primary shadow-neon hover:shadow-neon-strong;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .slide-up-animation {
+    @apply opacity-0;
+    animation: slideUp 0.6s ease forwards;
+  }
+
+  .link-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-golm-blue after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .loader-animated-background {
+    background: linear-gradient(to right, #121212 8%, #202020 18%, #121212 33%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s linear infinite forwards;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.parallax-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 8px;
+  height: 100vh;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-layer-back {
+  transform: translateZ(0px) scale(1);
+}
+
+.parallax-layer-mid {
+  transform: translateZ(-5px) scale(1.625);
+}
+
+.parallax-layer-front {
+  transform: translateZ(-10px) scale(2.25);
+}
+
+.vertical-timeline-element-content {
+  @apply bg-opacity-10 bg-white backdrop-blur-md border border-white/10 shadow-glass text-white;
+}
+
+/* 3D Card Tilt Effect */
+.tilt-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: transform 0.1s ease-out;
+}
+
+.tilt-card-content {
+  transform-style: preserve-3d;
+}
+
+.tilt-card-inner {
+  transform: translateZ(20px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0070f3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3291ff;
+}
+
+/* Button ripple effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
