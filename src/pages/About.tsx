@@ -55,7 +55,7 @@ const About = () => {
                 Our <span className="text-gradient-blue">Story</span>
               </h2>
               <p className="text-gray-400 mb-4">
-                Golmmedia was founded in 2018 with a clear mission: to provide specialized social media marketing services for healthcare professionals who were being underserved by generic marketing agencies.
+                Golmmedia was founded in 2023 with a clear mission: to provide specialized social media marketing services for healthcare professionals who were being underserved by generic marketing agencies.
               </p>
               <p className="text-gray-400 mb-4">
                 Our founder, having worked with several optical and dental practices, noticed these businesses faced unique challenges in patient acquisition and retention that weren't being addressed by standard marketing approaches.
@@ -140,35 +140,11 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Alex Morgan",
+                name: "Mohamed Ouchbara",
                 position: "Founder & CEO",
-                bio: "With over 10 years in healthcare marketing, Alex built Golmmedia to fill the gap in specialized social media for healthcare providers."
-              },
-              {
-                name: "Sarah Johnson",
-                position: "Dental Marketing Specialist",
-                bio: "Former dental office manager with deep insights into patient acquisition and retention for dental practices."
-              },
-              {
-                name: "Michael Chen",
-                position: "Optical Marketing Lead",
-                bio: "Specialized in creating campaigns that highlight the unique aspects of optical stores and vision care centers."
-              },
-              {
-                name: "Jessica Williams",
-                position: "Content Director",
-                bio: "Award-winning content creator specializing in healthcare narratives that engage and educate patients."
-              },
-              {
-                name: "David Kim",
-                position: "Analytics Expert",
-                bio: "Data scientist focused on translating social media metrics into actionable business insights for healthcare practices."
-              },
-              {
-                name: "Emma Rodriguez",
-                position: "Client Success Manager",
-                bio: "Dedicated to ensuring our healthcare clients achieve their growth goals through strategic support."
+                bio: "With over 3 years in healthcare marketing, Mohamed built Golmmedia to fill the gap in specialized social media for healthcare providers."
               }
+              
             ].map((member, index) => (
               <motion.div
                 key={index}

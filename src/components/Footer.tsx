@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://facebook.com" 
+                href="https://web.facebook.com/profile.php?id=100090645045014" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full flex items-center justify-center bg-golm-black-light text-white hover:bg-golm-blue transition-colors duration-300"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Facebook size={18} />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/golmmedia/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full flex items-center justify-center bg-golm-black-light text-white hover:bg-golm-blue transition-colors duration-300"
@@ -46,16 +46,7 @@ const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full flex items-center justify-center bg-golm-black-light text-white hover:bg-golm-blue transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
-              </a>
-              <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/golmmedia" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full flex items-center justify-center bg-golm-black-light text-white hover:bg-golm-blue transition-colors duration-300"
@@ -92,15 +83,14 @@ const Footer = () => {
           <div className="md:col-span-3">
             <h3 className="text-white font-display font-medium text-lg mb-4">Contact Us</h3>
             <address className="not-italic">
-              <p className="text-gray-400 mb-2">1234 Marketing Avenue</p>
-              <p className="text-gray-400 mb-2">Suite 567</p>
-              <p className="text-gray-400 mb-2">New York, NY 10001</p>
-              <p className="text-gray-400 mb-4">United States</p>
+              <p className="text-gray-400 mb-2">HAY ATLAS</p>
+              <p className="text-gray-400 mb-2">Beni Mellal, 23030</p>
+              <p className="text-gray-400 mb-4">Morocco</p>
               <p className="text-gray-400 hover:text-white transition-colors mb-1">
-                <a href="mailto:hello@golmmedia.com">hello@golmmedia.com</a>
+                <a href="mailto:golmmedia@gmail.com">Golmmedia Email</a>
               </p>
               <p className="text-gray-400 hover:text-white transition-colors">
-                <a href="tel:+12345678900">+1 (234) 567-8900</a>
+                <a href="tel:+212 612-822713">+212 612-822713</a>
               </p>
             </address>
           </div>

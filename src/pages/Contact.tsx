@@ -105,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-medium mb-1">Email Us</h3>
-                    <p className="text-gray-400">info@golmmedia.com</p>
+                    <p className="text-gray-400">golmmedia@gmail.com</p>
                     <p className="text-gray-400 text-sm mt-1">We respond to all inquiries within 24 hours</p>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-medium mb-1">Call Us</h3>
-                    <p className="text-gray-400">(555) 123-4567</p>
+                    <p className="text-gray-400">+212 612-822713</p>
                     <p className="text-gray-400 text-sm mt-1">Monday-Friday, 9AM-5PM EST</p>
                   </div>
                 </div>
@@ -127,9 +127,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-medium mb-1">Visit Us</h3>
-                    <p className="text-gray-400">123 Innovation Drive</p>
-                    <p className="text-gray-400">Suite 200</p>
-                    <p className="text-gray-400">San Francisco, CA 94103</p>
+                    <p className="text-gray-400">Hay Atlas</p>
+                    <p className="text-gray-400">Beni Mellal 23030</p>
                   </div>
                 </div>
               </div>
